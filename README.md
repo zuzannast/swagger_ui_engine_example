@@ -10,6 +10,11 @@ SwaggerUIEngine | Ruby  | Rails versions
 
 # Config  
 
+[Gemfile](https://github.com/ZuzannaSt/swagger_ui_engine_example/blob/master/Gemfile#L4)
+```ruby
+gem 'swagger_ui_engine'
+```
+
 [Initializer](https://github.com/ZuzannaSt/swagger_ui_engine_example/blob/master/config/initializers/swagger_ui_engine.rb)
 ```ruby
 # config/initializers/swagger_ui_engine.rb
@@ -43,4 +48,9 @@ end
 ```
 
 # Result
+
+## Heroku app
+[swagger-ui-engine-example](https://swagger-ui-engine-example.herokuapp.com/swagger)
+
+## /swagger
 ![Swagger Web UI](https://github.com/ZuzannaSt/swagger_ui_engine_example/blob/master/app/assets/images/swagger_ui_engine_example.png)
