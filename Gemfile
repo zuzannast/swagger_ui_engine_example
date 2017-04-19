@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'swagger_ui_engine', path: '~/Documents/projects/swagger_ui_engine'
+gem 'swagger_ui_engine'
 
 gem 'puma'
 gem 'rails'
