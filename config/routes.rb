@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  mount SwaggerUiEngine::Engine, at: '/swagger'
+  mount SwaggerUiEngine::Engine, at: '/'
 end
