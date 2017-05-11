@@ -31,7 +31,7 @@ end
 # config/routes.rb
 
 Rails.application.routes.draw do
-  mount SwaggerUiEngine::Engine, at: '/swagger'
+  mount SwaggerUiEngine::Engine, at: '/'
 end
 ```
 
@@ -50,7 +50,7 @@ end
 # Result
 
 ## Heroku app
-[swagger-ui-engine-example](https://swagger-ui-engine-example.herokuapp.com/swagger)
+[swagger-ui-engine-example](https://swagger-ui-engine-example.herokuapp.com)
 
 ## /swagger
 ![Swagger Web UI](https://github.com/ZuzannaSt/swagger_ui_engine_example/blob/master/app/assets/images/swagger_ui_engine_example.png)
