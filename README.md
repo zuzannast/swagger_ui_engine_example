@@ -6,7 +6,7 @@ This is an example use of [SwaggerUiEngine](https://github.com/ZuzannaSt/swagger
 
 SwaggerUIEngine | Ruby  | Rails versions   
 ----------------| ----- | -----------------
-0.0.5           | 2.4.1 | 5.0.2 (>= 4.2.6)
+1.0.0           | 2.4.1 | 5.1.0
 
 # Config  
 
@@ -20,9 +20,14 @@ gem 'swagger_ui_engine'
 # config/initializers/swagger_ui_engine.rb
 
 SwaggerUiEngine.configure do |config|
-  config.swagger_url = '/doc/swagger.yaml'
+  config.swagger_url = {
+    v1: '/doc/v1/swagger.yaml',
+    v2: '/doc/v2/swagger.yaml'
+  }
+
   config.doc_expansion = 'full'
   config.model_rendering = 'model'
+  config.validator_enabled = true
 end
 ```
 
@@ -52,5 +57,8 @@ end
 ## Heroku app
 [swagger-ui-engine-example](https://swagger-ui-engine-example.herokuapp.com)
 
-## /swagger
-![Swagger Web UI](https://github.com/ZuzannaSt/swagger_ui_engine_example/blob/master/app/assets/images/swagger_ui_engine_example.png)
+## Index page
+![Swagger Web UI](https://github.com/ZuzannaSt/swagger_ui_engine_example/blob/master/app/assets/images/swagger_ui_engine_example_index.png)
+
+## Single version page
+![Swagger Web UI](https://github.com/ZuzannaSt/swagger_ui_engine_example/blob/master/app/assets/images/swagger_ui_engine_example_version.png)
