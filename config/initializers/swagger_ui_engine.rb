@@ -1,7 +1,7 @@
 SwaggerUiEngine.configure do |config|
   config.swagger_url = {
-    v1: '/doc/swagger.yaml',
-    v2: '/doc/swagger.yaml'
+    v1: '/doc/v1/swagger.yaml',
+    v2: '/doc/v2/swagger.yaml'
   }
 
   config.doc_expansion = 'full'
