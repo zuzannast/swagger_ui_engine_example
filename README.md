@@ -28,6 +28,8 @@ SwaggerUiEngine.configure do |config|
   config.doc_expansion = 'full'
   config.model_rendering = 'model'
   config.validator_enabled = true
+  config.admin_username = 'admin'
+  config.admin_password = 'password'
 end
 ```
 
@@ -57,8 +59,13 @@ end
 ## Heroku app
 [swagger-ui-engine-example](https://swagger-ui-engine-example.herokuapp.com)
 
+## HTTP Basic Auth
+![SwaggerUiEngine Basic Auth](https://github.com/ZuzannaSt/swagger_ui_engine_example/blob/master/app/assets/images/swagger_ui_engine_example_basic_auth.png)
+
+The username and password for basic auth are: `admin` and `password` - as defined in the example configuration.
+
 ## Index page
-![Swagger Web UI](https://github.com/ZuzannaSt/swagger_ui_engine_example/blob/master/app/assets/images/swagger_ui_engine_example_index.png)
+![SwaggerUiEngine Index Page](https://github.com/ZuzannaSt/swagger_ui_engine_example/blob/master/app/assets/images/swagger_ui_engine_example_index.png)
 
 ## Single version page
-![Swagger Web UI](https://github.com/ZuzannaSt/swagger_ui_engine_example/blob/master/app/assets/images/swagger_ui_engine_example_version.png)
+![Swagger Web UI Single version](https://github.com/ZuzannaSt/swagger_ui_engine_example/blob/master/app/assets/images/swagger_ui_engine_example_version.png)
