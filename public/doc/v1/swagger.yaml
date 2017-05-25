@@ -15,7 +15,7 @@ info:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
 host: petstore.swagger.io
-basePath: "/v2"
+basePath: "/v1"
 schemes:
   - http
 tags:
@@ -32,7 +32,7 @@ tags:
       description: Find out more about our store
       url: http://swagger.io
 securityDefinitions:
-  petstore_auth:
+  oauth2:
     type: oauth2
     authorizationUrl: http://petstore.swagger.io/oauth/dialog
     flow: implicit
@@ -46,3 +46,21 @@ securityDefinitions:
 externalDocs:
   description: Find out more about Swagger
   url: http://swagger.io
+paths:
+  /pets:
+    get:
+      description: "Returns all pets from the system that the user has access to"
+      produces:
+        - "application/json"
+      responses:
+        "200":
+          description: "A list of pets."
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Pet"
+      security:
+        - oauth2: ["read:pets"]
+definitions:
+  Pet:
+    $ref: "definitions/pet.yaml"
