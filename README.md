@@ -6,7 +6,7 @@ This is an example use of [SwaggerUiEngine](https://github.com/ZuzannaSt/swagger
 
 SwaggerUIEngine | Ruby  | Rails versions   
 ----------------| ----- | -----------------
-1.0.0           | 2.4.1 | 5.1.0
+1.1.0           | 2.4.1 | 5.1.0
 
 # Config  
 
